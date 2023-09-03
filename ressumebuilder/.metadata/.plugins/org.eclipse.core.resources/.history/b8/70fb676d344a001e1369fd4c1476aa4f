@@ -1,0 +1,222 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body
+{
+  margin:0px;
+  padding:0px;
+  background-color: #219ebc;
+}
+#container
+{
+  color: black;
+  display: flex;
+  justify-content:center;
+}
+#header
+{
+  background-color: #8ecae6;
+}
+.form-group
+{
+   
+}
+
+</style>
+        <script language="javascript" type="text/javascript" >
+       var mytext=0;
+       var myhob=10;
+       var myexp=0;
+       var myexp1=0;
+       var myexp2=0;
+       var myedu=0;
+       var mycer=0;
+       var mtcer=0;
+        function changeIt()
+        {
+        	
+        createTextbox.innerHTML = createTextbox.innerHTML +`<input type='text' name='${mytext}'>`
+        mytext++;
+        		
+        }
+        function changeit()
+        {
+        createhob.innerHTML = createhob.innerHTML +`<input type='text' name='${myhob}'>`
+        myhob++;
+        }
+        function changeitt()
+        {
+            createedu.innerHTML = createedu.innerHTML +`<input type='text' name='a${myexp}' placeholder='Year'>`
+            createedu.innerHTML = createedu.innerHTML +`<input type='text' name='b${myexp1}' placeholder='Name of Institute'>`
+            createedu.innerHTML = createedu.innerHTML +`<input type='text' name='c${myexp2}' placeholder='Degree'> <br>`
+            myexp++;
+            myexp1++;
+            myexp2++;
+        }
+        function changeittt()
+        {
+            createexp.innerHTML = createexp.innerHTML +`<input type='text' name='d${myedu}' placeholder='Year'>`
+            createexp.innerHTML = createexp.innerHTML +`<input type='text' name='e${myedu}' placeholder='Name of Institute'><br>`
+            createexp.innerHTML = createexp.innerHTML +`<textarea type='text' name='f${myedu}' placeholder='description' row='1' cols='100'></textarea> <br>`
+            myedu++;
+        }
+        function changeitttt()
+        {
+            createcer.innerHTML = createcer.innerHTML +`<input type='text' name='g${mycer}' placeholder='Year'>`
+            createcer.innerHTML = createcer.innerHTML +`<input type='text' name='p${mycer}' placeholder='Name of Institute'>`
+            mycer++;
+        }
+        function changeok()
+        {
+            cer.innerHTML = cer.innerHTML +`<input type='text' name='l${mtcer}' placeholder='Year'>`
+            cer.innerHTML = cer.innerHTML +`<input type='text' name='m${mtcer}' placeholder='Name of Institute'>`
+            cer.innerHTML = cer.innerHTML +`<input type='text' name='n${mtcer}' placeholder='description'>`
+            mtcer++;
+        }
+        </script>
+        
+</head>
+<body>
+   <form action="go" method="post" id="container">
+   
+       <div id="header">
+
+       <div if="box0" class="form-group">
+          <h1>ENTER THE INFORMATION</h1>
+       </div>
+
+        <div id="box1" class="form-group">
+
+        <h2>PERSONAL DETAILS</h2>
+
+        <div class="container">
+            <div>
+                <label for="name">ENTER YOUR NAME</label>
+            <input type="text" name="name", id="name", placeholder="name" required autofocus>
+            </div>
+           
+          <div>
+            <label for="surname">ENTER YOUR SURNAME</label>
+            <input type="text" name="surname", id="surname", placeholder="surname" required autofocus>
+          </div>
+           
+            <div>
+                <label for="designation">DESIGNATION</label>
+            <input type="text" name="designation", id="designation", placeholder="profile" required autofocus>
+            </div>
+        </div>
+
+       </div>
+       
+       <div id="box2" class="form-group">
+       <h2>DESCRIPTION</h2>
+      
+       <label for="description"></label>
+       <!-- <input type="text" name="designation", id="designation", placeholder="profile" required autofocus> -->
+       <textarea maxlength="90" minlength="20" required placeholder="Describe yourself in 90 words" id="description" name="description" rows="6" cols="150" ></textarea>
+       </div>
+  
+       <div id="box3" class="form-group">
+       <h2>ENTER YOUR SKILLS</h2>
+       <!-- <input type="text"> -->
+        
+        <input type="text" name="in1">
+        
+        <input type="button" value="clickHere" onClick="changeIt()">
+        <div id="createTextbox"></div>
+
+       </div> 
+
+        <div id="box4" class="form-group">
+        <h2>Hobbies</h2>
+        <input type="text" name="in2">
+        <input type="button" value="clickHere" onClick="changeit()">
+        <div id="createhob"></div>
+
+        </div>
+
+       <div id="box5" class="form-group">
+        <h2>EDUCATION</h2>
+        <input type="text" name="in3">
+        <input type="button" value="clickHere" onClick="changeitt()">
+        <div id="createedu"></div>
+        </div>
+
+       <div id="box6" class="form-group">
+       <h2>CONTACTS</h2>
+       
+      <div class="container">
+        <div>
+            <label for="phone">PHONE NUMBER</label>
+        <input type="number" name="phone", id="phone", placeholder="phone_number" required autofocus>
+        </div>
+        <div>
+            <label for="mail">E-MAIL</label>
+        <input type="email" name="mail", id="mail", placeholder="email" required autofocus>
+        </div>
+ 
+        <div>
+            <label for="City">CITY</label>
+        <input type="text" name="City", id="City", placeholder="City" required autofocus>
+ 
+        </div>
+        
+        <div>
+            <label for="state">STATE</label>
+        <input type="text" name="state", id="state", placeholder="state" required autofocus>
+        </div>
+
+      </div>
+
+       </div>
+
+       <div id="box7" class="form-group">
+        <h2>SOCIALS</h2>
+        <div class="contain">
+          <div>
+            <label for="Insta">GITHUB</label>
+            <input type="url" name="Insta", id="Insta", placeholder="Insta" required autofocus> 
+            </div>
+            <div> 
+            <label for="Insta1">LINKEDIN</label>
+            <input type="url" name="Insta1", id="Instal", placeholder="Instal" required autofocus>
+            </div>
+          </div> 
+       </div>
+
+       <div id="box8" class="form-group">
+        <h2>EXPERIENCE</h2>
+         <input type="text" name="in4">
+        <input type="button" value="clickHere" onClick="changeittt()">
+        <div id="createexp"></div>
+       </div>
+
+      <div id="box9" class="form-group">
+     
+        <h2>CERTIFICATION</h2>
+          <input type="text" name="in5">
+        <input type="button" value="clickHere" onClick="changeitttt()">
+        <div id="createcer"></div>
+      </div>
+      
+      <div id="box10" class="form-group">
+     
+        <h2>ACHIEVEMENTS</h2>
+          <input type="text" name="in6">
+        <input type="button" value="clickHere" onClick="changeok()">
+        <div id="cer"></div>
+      </div>
+      
+      <div id="footer" class="form-group">
+        <button type="submit">submit</button>
+       </div>
+</div>
+       
+      </form>
+</body>
+</html>

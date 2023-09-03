@@ -1,0 +1,7 @@
+127.0.0.1 - - [28/Aug/2023:12:11:37 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:12:11:58 +0530] "GET /resume_builder/ HTTP/1.1" 200 1384
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:12:11:59 +0530] "GET /resume_builder/resources/css/home.css;jsessionid=3908CDF09C5519968DFFF1BDA84E9D02 HTTP/1.1" 200 1689
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:12:11:59 +0530] "GET /resume_builder/resources/css/hero-image.jpg HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:12:12:01 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:12:12:12 +0530] "GET /resume_builder/t1? HTTP/1.1" 500 4534
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:12:12:17 +0530] "GET /resume_builder/ind? HTTP/1.1" 200 6596
