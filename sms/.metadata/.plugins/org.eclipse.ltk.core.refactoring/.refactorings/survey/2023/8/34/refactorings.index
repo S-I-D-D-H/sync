@@ -1,0 +1,26 @@
+1692807733237	Move 'resources' to 'webapp'
+1692807962351	Delete element
+1692808081706	Move 'views' to 'WEB-INF'
+1692808094904	Move 'resources' to 'WEB-INF'
+1692808385286	Move 'index.jsp' to 'views'
+1692808461405	Rename resource 'views'
+1692809442707	Move 'ask.jsp' to 'webapp'
+1692809445588	Move 'index.jsp' to 'webapp'
+1692810249487	Rename resource 'controller.java'
+1692810355539	Delete element
+1692810416023	Move 'ask.jsp' to 'VIEWS'
+1692810699305	Delete element
+1692810844253	Move 'com' to 'main'
+1692810875545	Move folder
+1692810902515	Move 'com' to 'java'
+1692811141363	Move 'VIEWS' to 'webapp'
+1692811146053	Move 'VIEWS' to 'WEB-INF'
+1692811411082	Move 'ask.jsp' to 'webapp'
+1692811438627	Move 'ask.jsp' to 'VIEWS'
+1692812005659	Rename resource 'VIEWS'
+1692812134792	Delete element
+1692812140814	Move compilation unit
+1692812198268	Delete element
+1692812241735	Move compilation unit
+1692812249827	Delete element
+1692812864662	Rename resource 'view'

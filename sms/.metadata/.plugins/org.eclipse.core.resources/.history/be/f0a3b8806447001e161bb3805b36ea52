@@ -1,0 +1,186 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="<c:url value="resources/css/form.css"/>" rel="stylesheet">
+<title>Insert title here</title>
+ <style>
+        .in
+        {
+            border: 0px;
+            border-radius: 2px;
+            display: inline-block;
+            margin-right: 0.625rem;
+            min-height: 1.25rem;
+            min-width: 1.25rem;
+        }
+        .in_1
+        {
+            height: 40px;
+            border: 0px;
+            border-radius: 2px;
+            display: inline-block;
+            margin-right: 0.625rem;
+            min-height: 1.25rem;
+            min-width: 1.25rem;   
+        }
+    </style>
+ <script>
+      var myhob=0;
+        function changeitt()
+        {
+            createhob.innerHTML = createhob.innerHTML +`<br>`
+            createhob.innerHTML = createhob.innerHTML +`<div class='formcontrol'>`
+            
+        createhob.innerHTML = createhob.innerHTML +`<input type='text' name='a${myhob}' placeholder='Question/Statement' class='in_1' size='60px'><br><br><br>    `
+        createhob.innerHTML = createhob.innerHTML +`<input type='text' name='b${myhob}'
+        placeholder='option 1'  class='in' size='30px'><br><br>`
+        createhob.innerHTML = createhob.innerHTML +`<input type='text' name='c${myhob}' placeholder='option 2'  class='in' size='30px'><br><br>`
+        createhob.innerHTML = createhob.innerHTML +`<input type='text' name='d${myhob}'
+        placeholder='option 3'  class='in' size='30px'><br><br>`
+        createhob.innerHTML = createhob.innerHTML +`<input type='text' name='e${myhob}'
+        placeholder='option 4'  class='in' size='30px'><br><br>`
+
+        createhob.innerHTML = createhob.innerHTML +`</div>`
+        myhob++;
+        }
+        
+
+    </script>
+</head>
+<body>
+     <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                Survey for <input type="text" required name="txt" id="txt">
+            </h1>
+            <br>
+            <h2> DESCRIPTION ABOUT YOUR SURVEY</h2>
+            <p id="description">
+               <textarea name = "txtarea" rows="3" cols="75" required></textarea>
+            </p>
+        </header>
+       
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Name Of Creator</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="phone">Number of Advices/Questions You want to insert</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+            </div>
+            <!-- end of Number section -->
+
+            <!-- Type Number section -->
+            <!-- <div class="form-group">
+                <label for="address">Address <span class="clue">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+            </div> -->
+            <!--  end of number section -->
+
+            <!-- select section -->
+            <!-- <div class="form-group">
+                <p id="quest">Which option best describe your current role</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="student">Chair Man</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="job">Employee</option>
+                    <option value="other">Other</option>
+                </select>
+
+            </div>
+            <!-- end of select section -->
+          
+
+           <div class="form-group">
+          
+            <input type="button" value="clickHere" onClick="changeitt()">
+            <div id="createhob"></div>
+
+           </div>
+
+
+<!-- 
+            <!-- radio button section -->
+            <!-- <div class="form-group">
+                <p id="quest">How you come to know about WEBHUB ?</p>
+                <label for="">
+                    <input type="radio" name="source" value="freinds"
+                    class="inputRadio"
+                    checked> Friends
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio"
+                    >TV Ads
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="social-media"
+                    class="inputRadio"
+                    > Social Media
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="newspaper"
+                    class="inputRadio"
+                    > Newspaper
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="other"
+                    class="inputRadio"
+                    > Other
+                </label>
+            </div> -->
+            <!-- end of radio button -->
+
+            <!-- Checkbox section -->
+            <!-- <div class="form-group">
+                <p id="quest">Would you like to see improved ? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev"> Front-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> Back-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev">  Android App Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering"> Software Engineering
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                </label>
+            </div> -->
+            <!-- End of checkbox section -->
+
+            <!-- Textarea section -->
+            <!-- <div class="form-group">
+                <p id="quest">Give us your feedback</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>  -->
+            <div class="form-group">
+               <form action="back_1" method="post">
+                <button type="submit" id="submit" class="btn">Submit</button>
+               </form>
+            </div>
+        
+    </div>
+</body>
+</html>

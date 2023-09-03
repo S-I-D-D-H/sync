@@ -1,0 +1,281 @@
+package com.survey;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.survey.dao.RowMapperImple;
+import com.survey.dao.RowMapperImple2;
+import com.survey.entities.ADMIN;
+import com.survey.entities.USER;
+
+@Controller
+public class homecontroler
+{
+	  @RequestMapping("")
+	  public ModelAndView calling(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("ask");
+		  return mv;
+	  }
+	  @RequestMapping("/admin")
+	  public ModelAndView calling1(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("login_admin");
+		  return mv;
+	  }
+	  @RequestMapping("/user")
+	  public ModelAndView calling2(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("login_user");
+		  return mv;
+	  }
+	  @RequestMapping("/admin_register")
+	  public ModelAndView calling3(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("cust");
+		  return mv;
+	  }
+	  @RequestMapping("/user_register")
+	  public ModelAndView calling4(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("cust1");
+		  return mv;
+	  }
+	  @RequestMapping("/sub1")
+	  public ModelAndView calling5(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  String u1 = request.getParameter("Username").toString();
+		  String u2 = request.getParameter("pass").toString();
+		  int u3 =  Integer.parseInt(request.getParameter("empid"));
+		  
+		  ApplicationContext as = new ClassPathXmlApplicationContext("com/survey/hello.xml");
+		  JdbcTemplate temp = as.getBean("jdbcTemplate",JdbcTemplate.class); 
+		  
+		  String query = "insert into user(userid,username,password) values(?,?,?)";
+			 
+		  int update = temp.update(query,u3,u1,u2);
+		  System.out.println("numbers of record inserted...." + update);
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("login_user");
+		  return mv;
+	  }
+	  @RequestMapping("/sub2")
+	  public ModelAndView calling6(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  String a1 = request.getParameter("Username").toString();
+		  String a2 = request.getParameter("pass").toString();
+		  int a3 =  Integer.parseInt(request.getParameter("empid"));
+		  
+		  ApplicationContext as = new ClassPathXmlApplicationContext("com/survey/hello.xml");
+		  JdbcTemplate temp = as.getBean("jdbcTemplate",JdbcTemplate.class); 
+		  
+		  String query = "insert into admin(empid,username,password) values(?,?,?)";
+			 
+		  int update = temp.update(query,a3,a1,a2);
+		  System.out.println("numbers of record inserted...." + update);
+		  
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("login_admin");
+		  return mv;
+	  }
+	  @RequestMapping("/home_a")
+	  public ModelAndView calling7(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  
+		  String a1 = request.getParameter("user1").toString();
+		  String a2 = request.getParameter("pass1").toString();
+		  
+		  ModelAndView obj = new ModelAndView();
+		  
+		  ApplicationContext as = new ClassPathXmlApplicationContext("com/survey/hello.xml");
+		  JdbcTemplate temp = as.getBean("jdbcTemplate",JdbcTemplate.class); 
+		  
+		  String query = "select * from admin";
+		  RowMapper<ADMIN> rm = new RowMapperImple();
+		  List<ADMIN> result = temp.query(query,rm);
+		  for(ADMIN e: result)
+	       {
+			 String p = e.getUsername();
+			 String r = e.getPassword();
+	    	   if(a1.compareTo(p)==0 && a2.compareTo(r)==0)
+	    	   {
+	    		   System.out.println("entered");
+	    		   obj.setViewName("home_admin");
+	    		   return obj;
+	    	   }
+	    	  
+	    	   p="";
+	    	   r="";
+//	    	   }
+//			 System.out.println(e);
+	       }
+
+		  
+		  System.out.print("HI");
+		 
+		  obj.setViewName("login_admin");
+		  return obj;
+	  }
+	  @RequestMapping("/create")
+	  public ModelAndView calling8(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("form");
+		  return mv;
+	  }
+	  @RequestMapping("/back_1")
+	  public ModelAndView calling9(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  String f1 = request.getParameter("txt").toString();
+		  String f2 = request.getParameter("txtarea").toString();
+		  String f3 = request.getParameter("name").toString();
+		  String f4 = request.getParameter("email").toString();
+		  int f5 = Integer.parseInt(request.getParameter("phone"));
+		  
+		  System.out.println(f1);
+		  System.out.println(f2);
+		  System.out.println(f3);
+		  System.out.println(f4);
+		  System.out.println(f5);
+		  
+		  ArrayList<String> s1 = new ArrayList<String>();
+		  int a=0;
+		 
+		  
+		  for(int i=0; i<f5; i++)
+		  {
+			  s1.add(request.getParameter("a"+a).toString());
+			  s1.add(request.getParameter("b"+a).toString());
+			  s1.add(request.getParameter("c"+a).toString());
+			  s1.add(request.getParameter("d"+a).toString());
+			  s1.add(request.getParameter("e"+a).toString());
+			  
+			  a++;
+		  }
+		  
+		  HttpSession session = request.getSession();
+		  
+		  session.setAttribute("ques", s1);
+		  session.setAttribute("num", f5);
+		 
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("home_admin");
+		  return mv;
+	  }
+	  @RequestMapping("/back")
+	  public ModelAndView calling10(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("login_admin");
+		  return mv;
+	  }
+	  @RequestMapping("/view")
+	  public ModelAndView calling11(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("view");
+		  return mv;
+	  }
+	  @RequestMapping("/home_user")
+	  public ModelAndView calling12(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  
+		  String a1 = request.getParameter("user2").toString();
+		  String a2 = request.getParameter("pass2").toString();
+		  
+		  ModelAndView obj = new ModelAndView();
+		  
+		  ApplicationContext as = new ClassPathXmlApplicationContext("com/survey/hello.xml");
+		  JdbcTemplate temp = as.getBean("jdbcTemplate",JdbcTemplate.class); 
+		  
+		  String query = "select * from user";
+		  RowMapper<USER> rm = new RowMapperImple2();
+		  List<USER> result = temp.query(query,rm);
+		  for(USER e: result)
+	       {
+			 String p = e.getUsername();
+			 String r = e.getPassword();
+	    	   if(a1.compareTo(p)==0 && a2.compareTo(r)==0)
+	    	   {
+	    		   System.out.println("entered");
+	    		   obj.setViewName("home_user");
+	    		   return obj;
+	    	   }
+	    	  
+	    	   p="";
+	    	   r="";
+//	    	   }
+//			 System.out.println(e);
+	       }
+
+		  
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("login_user");
+		  return mv;
+	  }
+	  @RequestMapping("/vote")
+	  public ModelAndView calling13(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("vote");
+		  return mv;
+	  }
+	  @RequestMapping("/back_2")
+	  public ModelAndView calling14(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("home_user");
+		  return mv;
+	  }
+	  @RequestMapping("/go")
+	  public ModelAndView calling15(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  List<String> s1 = new ArrayList<String>();
+		  HttpSession session = request.getSession();
+		  int n = (Integer)session.getAttribute("num");
+		  int p=1;
+		  for(int i=0; i<n; i++)
+		  {
+			  s1.add(request.getParameter("select"+p).toString());
+			  p++;
+		  }
+		  System.out.print("HERE");
+		  System.out.print(s1);
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("home_user");
+		  return mv;
+	  }
+	  
+}

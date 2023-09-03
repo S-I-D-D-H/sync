@@ -1,0 +1,5 @@
+package com.survey.entities;
+
+public class ADMIN {
+
+}

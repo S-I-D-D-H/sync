@@ -1,0 +1,86 @@
+package com.survey;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class homecontroler
+{
+	  @RequestMapping("")
+	  public ModelAndView calling(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("ask");
+		  return mv;
+	  }
+	  @RequestMapping("/admin")
+	  public ModelAndView calling1(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("login_admin");
+		  return mv;
+	  }
+	  @RequestMapping("/user")
+	  public ModelAndView calling2(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("login_user");
+		  return mv;
+	  }
+	  @RequestMapping("/admin_register")
+	  public ModelAndView calling3(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("cust");
+		  return mv;
+	  }
+	  @RequestMapping("/user_register")
+	  public ModelAndView calling4(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("cust1");
+		  return mv;
+	  }
+	  @RequestMapping("/sub1")
+	  public ModelAndView calling5(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("login_admin");
+		  return mv;
+	  }
+	  @RequestMapping("/sub2")
+	  public ModelAndView calling6(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("login_user");
+		  return mv;
+	  }
+	  @RequestMapping("/home_a")
+	  public ModelAndView calling7(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("home_admin");
+		  return mv;
+	  }
+	  @RequestMapping("/create")
+	  public ModelAndView calling8(HttpServletRequest request, HttpServletResponse response)
+	  {
+		  System.out.print("HI");
+		  ModelAndView mv = new ModelAndView();
+		  mv.setViewName("form");
+		  return mv;
+	  }
+	  
+}

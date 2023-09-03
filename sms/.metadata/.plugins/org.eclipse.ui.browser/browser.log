@@ -1,0 +1,167 @@
+
+Aug 26, 2023 08:38:16.802 NEW SESSION
+Aug 26, 2023 08:38:16.802 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Aug 27, 2023 10:51:08.55 NEW SESSION
+Aug 27, 2023 10:51:08.55 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Aug 28, 2023 20:59:35.831 NEW SESSION
+Aug 28, 2023 20:59:35.831 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Aug 28, 2023 21:13:22.48 [8784:7116:0828/211322.046:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Aug 28, 2023 21:37:38.27 [8784:7388:0828/213738.024:ERROR:device_event_log_impl.cc(222)] [21:37:38.023] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Aug 28, 2023 21:39:00.295 [8784:2176:0828/213900.295:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for e2c6.gcp.gvt2.com failed:
+Aug 28, 2023 21:39:00.296 ----- Certificate i=0 (CN=*.gcp.gvt2.com) -----
+Aug 28, 2023 21:39:00.296 ERROR: Time is after notAfter
+Aug 28, 2023 21:39:00.296 
+Aug 28, 2023 21:39:00.297 
+Aug 28, 2023 21:52:37.453 [8784:2176:0828/215237.452:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for e2c8.gcp.gvt2.com failed:
+Aug 28, 2023 21:52:37.454 ----- Certificate i=0 (CN=*.gcp.gvt2.com) -----
+Aug 28, 2023 21:52:37.454 ERROR: Time is after notAfter
+Aug 28, 2023 21:52:37.455 
+Aug 28, 2023 21:52:37.455 
+Aug 28, 2023 21:59:41.335 [8784:2176:0828/215941.333:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for e2c45.gcp.gvt2.com failed:
+Aug 28, 2023 21:59:41.341 ----- Certificate i=0 (CN=*.gcp.gvt2.com) -----
+Aug 28, 2023 21:59:41.342 ERROR: Time is after notAfter
+Aug 28, 2023 21:59:41.342 
+Aug 28, 2023 21:59:41.343 
+Aug 28, 2023 22:07:20.186 [8784:7116:0828/220720.186:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 22:07:48.516 [8784:7116:0828/220748.515:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 22:08:47.116 [8784:7116:0828/220847.115:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 22:10:46.286 [8784:7116:0828/221046.285:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 22:13:31.517 [8784:7116:0828/221331.517:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 22:24:38.761 [8784:7116:0828/222438.760:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 22:24:54.525 [8784:7116:0828/222454.523:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 22:25:02.715 [8784:7116:0828/222502.714:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 22:26:48.761 [8784:7116:0828/222648.760:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 22:29:41.786 [8784:7116:0828/222941.786:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 22:35:52.490 [8784:7116:0828/223552.488:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 23:09:27.507 [8784:2176:0828/230927.503:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for e2c54.gcp.gvt2.com failed:
+Aug 28, 2023 23:09:27.515 ----- Certificate i=0 (CN=*.gcp.gvt2.com) -----
+Aug 28, 2023 23:09:27.516 ERROR: Time is after notAfter
+Aug 28, 2023 23:09:27.517 
+Aug 28, 2023 23:09:27.518 
+Aug 28, 2023 23:26:09.829 [8784:7116:0828/232609.828:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 23:26:35.177 [8784:7116:0828/232635.177:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 23:27:31.704 [8784:7116:0828/232731.704:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 23:29:06.574 [8784:7116:0828/232906.574:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 23:32:38.599 [8784:7116:0828/233238.599:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 23:40:37.936 [8784:7116:0828/234037.935:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 23:50:00.35 [8784:7116:0828/235000.034:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 23:50:37.951 [8784:7116:0828/235037.951:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 23:51:34.108 [8784:7116:0828/235134.108:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 23:52:58.102 [8784:7116:0828/235258.100:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 28, 2023 23:56:57.589 [8784:7116:0828/235657.589:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+
+Aug 30, 2023 18:41:12.391 NEW SESSION
+Aug 30, 2023 18:41:12.393 [8848:10148:0830/184112.386:ERROR:backend_impl.cc(1040)] Critical error found -8
+Aug 30, 2023 18:41:16.997 [8848:10148:0830/184116.996:ERROR:backend_impl.cc(1040)] Critical error found -8
+Aug 30, 2023 18:41:38.361 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Aug 30, 2023 18:46:09.691 [8848:2876:0830/184609.690:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Aug 30, 2023 18:53:19.415 [8848:6328:0830/185319.407:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for e2c46.gcp.gvt2.com failed:
+Aug 30, 2023 18:53:19.427 ----- Certificate i=0 (CN=*.gcp.gvt2.com) -----
+Aug 30, 2023 18:53:19.428 ERROR: Time is after notAfter
+Aug 30, 2023 18:53:19.428 
+Aug 30, 2023 18:53:19.429 
+Aug 30, 2023 20:45:48.28 [8848:2876:0830/204548.027:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 20:46:15.186 [8848:2876:0830/204615.185:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 20:46:57.244 [8848:2876:0830/204657.244:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 20:48:43.391 [8848:2876:0830/204843.391:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 20:52:25.424 [8848:2876:0830/205225.424:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 20:59:44.758 [8848:2876:0830/205944.723:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 20:59:47.587 [8848:1800:0830/205947.585:ERROR:device_event_log_impl.cc(222)] [20:59:47.584] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Aug 30, 2023 20:59:48.882 [8848:2876:0830/205948.882:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 20:59:56.717 [8848:2876:0830/205956.717:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 21:01:38.02 [8848:2876:0830/210138.002:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 21:01:43.215 [8848:2876:0830/210143.214:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 21:09:14.443 [8848:2876:0830/210914.442:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 21:19:14.452 [8848:2876:0830/211914.450:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 21:29:14.453 [8848:2876:0830/212914.453:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 21:39:14.470 [8848:2876:0830/213914.469:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 21:49:14.480 [8848:2876:0830/214914.480:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 21:59:14.484 [8848:2876:0830/215914.484:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 22:09:14.500 [8848:2876:0830/220914.497:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 22:16:42.235 [8848:2876:0830/221642.233:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 22:19:14.511 [8848:2876:0830/221914.511:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 22:19:55.878 [8848:2876:0830/221955.878:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 22:21:45.970 [8848:2876:0830/222145.969:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 22:25:00.89 [8848:2876:0830/222500.088:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 22:30:24.925 [8848:2876:0830/223024.925:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 22:40:24.927 [8848:2876:0830/224024.927:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 22:41:21.281 [8848:6328:0830/224121.280:ERROR:get_updates_processor.cc(261)] PostClientToServerMessage() failed during GetUpdates with error 2
+Aug 30, 2023 22:42:36.302 [8848:6328:0830/224236.302:ERROR:get_updates_processor.cc(261)] PostClientToServerMessage() failed during GetUpdates with error 2
+Aug 30, 2023 22:44:28.810 [8848:6328:0830/224428.810:ERROR:get_updates_processor.cc(261)] PostClientToServerMessage() failed during GetUpdates with error 2
+Aug 30, 2023 22:47:17.574 [8848:6328:0830/224717.574:ERROR:get_updates_processor.cc(261)] PostClientToServerMessage() failed during GetUpdates with error 2
+Aug 30, 2023 22:50:24.943 [8848:2876:0830/225024.943:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 22:51:30.712 [8848:6328:0830/225130.712:ERROR:get_updates_processor.cc(261)] PostClientToServerMessage() failed during GetUpdates with error 2
+Aug 30, 2023 23:00:24.952 [8848:2876:0830/230024.951:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 23:01:30.728 [8848:6328:0830/230130.728:ERROR:get_updates_processor.cc(261)] PostClientToServerMessage() failed during GetUpdates with error 2
+Aug 30, 2023 23:10:24.963 [8848:2876:0830/231024.962:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 23:11:11.311 [8848:2876:0830/231111.311:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 23:11:11.312 [8848:7524:0830/231111.312:ERROR:get_updates_processor.cc(261)] PostClientToServerMessage() failed during GetUpdates with error 2
+Aug 30, 2023 23:11:17.766 [8848:2876:0830/231117.765:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Aug 30, 2023 23:11:17.769 [8848:6748:0830/231117.768:ERROR:get_updates_processor.cc(261)] PostClientToServerMessage() failed during GetUpdates with error 2
+Aug 30, 2023 23:11:30.746 [8848:6328:0830/231130.745:ERROR:get_updates_processor.cc(261)] PostClientToServerMessage() failed during GetUpdates with error 2
+
+Aug 31, 2023 24:06:21.389 NEW SESSION
+Aug 31, 2023 24:06:21.390 [7584:7256:0831/000621.382:ERROR:backend_impl.cc(1040)] Critical error found -8
+Aug 31, 2023 24:06:38.672 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Sept 01, 2023 20:38:56.129 NEW SESSION
+Sept 01, 2023 20:38:56.129 [8032:2528:0901/203856.127:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 01, 2023 20:38:57.568 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Sept 01, 2023 20:39:24.463 [8032:2528:0901/203924.463:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 01, 2023 20:40:08.737 [8032:2528:0901/204008.737:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 01, 2023 20:41:58.44 [8032:2528:0901/204158.043:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 01, 2023 20:53:30.714 [8032:7380:0901/205330.705:ERROR:device_event_log_impl.cc(222)] [20:53:30.705] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+                                                                                                                                          
+Sept 01, 2023 23:24:28.812 NEW SESSION
+Sept 01, 2023 23:24:28.812 [2664:2056:0901/232428.808:ERROR:backend_impl.cc(1040)] Critical error found -8
+Sept 01, 2023 23:24:28.813 [2664:2056:0901/232428.808:ERROR:entry_impl.cc(996)] Failed to save user data
+Sept 01, 2023 23:24:29.398 [2664:2056:0901/232429.396:ERROR:backend_impl.cc(1040)] Critical error found -8
+Sept 01, 2023 23:24:29.398 [2664:2056:0901/232429.397:ERROR:entry_impl.cc(996)] Failed to save user data
+Sept 01, 2023 23:24:50.115 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Sept 01, 2023 23:27:02.527 [2664:8644:0901/232702.524:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Sept 01, 2023 23:51:31.122 [2664:8644:0901/235131.118:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 01, 2023 23:52:01.93 [2664:8644:0901/235201.092:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 01, 2023 23:52:43.230 [2664:8644:0901/235243.229:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 01, 2023 23:54:05.202 [2664:8644:0901/235405.202:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 01, 2023 23:57:25.716 [2664:8644:0901/235725.716:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 24:04:11.938 [2664:8644:0902/000411.938:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 24:14:11.948 [2664:8644:0902/001411.947:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 24:24:11.954 [2664:8644:0902/002411.954:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 24:34:11.958 [2664:8644:0902/003411.958:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 24:44:11.963 [2664:8644:0902/004411.963:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 24:48:34.744 [2664:8644:0902/004834.744:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 24:48:41.197 [2664:8644:0902/004841.197:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 24:58:41.199 [2664:8644:0902/005841.199:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+
+Sept 02, 2023 17:25:33.89 NEW SESSION
+Sept 02, 2023 17:25:33.89 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+                                                                                                                                                                                                                                                                                              
+Sept 02, 2023 21:45:34.623 NEW SESSION
+Sept 02, 2023 21:45:34.623 [13252:9972:0902/214534.619:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 21:45:36.120 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Sept 02, 2023 21:45:57.411 [13252:9972:0902/214557.411:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 21:45:57.412 [13252:12068:0902/214557.412:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Connection failed (-105).
+Sept 02, 2023 21:46:46.290 [13252:9972:0902/214646.289:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 21:48:29.215 [13252:9972:0902/214829.214:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 21:51:59.786 [13252:9972:0902/215159.786:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 21:58:42.639 [13252:9972:0902/215842.639:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 22:08:42.650 [13252:9972:0902/220842.650:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 22:18:42.659 [13252:9972:0902/221842.659:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 22:28:42.664 [13252:9972:0902/222842.664:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 22:38:42.676 [13252:9972:0902/223842.676:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 22:48:42.687 [13252:9972:0902/224842.687:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 22:58:42.697 [13252:9972:0902/225842.697:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 23:08:42.706 [13252:9972:0902/230842.706:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 23:18:42.717 [13252:9972:0902/231842.717:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 02, 2023 23:28:42.729 [13252:9972:0902/232842.729:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+
+Sept 03, 2023 24:07:27.401 NEW SESSION
+Sept 03, 2023 24:07:27.401 [9180:2696:0903/000727.400:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sept 03, 2023 24:07:29.812 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Sept 03, 2023 24:07:55.537 [9180:2696:0903/000755.537:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+
+Sept 03, 2023 10:31:31.328 NEW SESSION
+Sept 03, 2023 10:31:31.328 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Sept 03, 2023 11:46:24.985 [7276:10548:0903/114624.981:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2

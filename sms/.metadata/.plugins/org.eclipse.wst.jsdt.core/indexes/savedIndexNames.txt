@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+S:\sms\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1290094257.index
+2174551084.index
+219837342.index
+37463784.index
+2124110386.index
+1335836214.index
+1703175906.index

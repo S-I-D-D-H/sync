@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+ <%@ page import="java.util.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+     <form action="go" method="post">
+      <%
+      int count=1;
+      int a=0;
+      int b=0;
+      ArrayList result = (ArrayList)session.getAttribute("ques");
+      System.out.println(result+"1");
+      int n = (Integer)session.getAttribute("num");
+      if(result.isEmpty()||result==null)
+      {
+    	  out.println("NO SURVEYS AVAILABLE: ");
+      }
+      else
+      {
+      for(int i=0; i<result.size(); i+=5)
+      {
+    	  a++;
+    	  count=1;
+    	  out.println(result.get(i));
+    	  out.println("<html><body><br></body></html>");
+    	  for(int j=i+1; j<result.size(); j++)
+    	  {
+    		  b++;
+    		  if(count==5)
+    		  {
+    			  break;
+    		  }%>
+    		 
+    		  <input type="radio" name = "select<%=a%>" value="call<%=b%> required">  <%=result.get(j)%>  <br><br>
+    		 <% 
+        	  count++;
+    	  }
+      }
+      }
+      %>
+      <button type="submit">
+          SUBMIT
+      </button>
+      </form>
+</body>
+</html>

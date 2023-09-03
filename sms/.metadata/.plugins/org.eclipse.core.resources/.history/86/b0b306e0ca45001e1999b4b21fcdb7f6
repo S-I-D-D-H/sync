@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style>       
+        body
+        {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("image4.jpg");
+            background-size: cover;
+        }
+        .container
+        {
+            /* border: 2px solid black; */
+            height: 60vh;
+            width:30vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .main
+        {
+            /* border: 2px solid black; */
+            height: 30vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: larger;
+        }
+        .hel
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>WELCOME</h1>
+    <br>
+   
+        <h1>CREATE A SURVEY</h1>
+    </div>
+
+    <div class="container">
+        <button class="btn btn1" class="hel">CREATE</button>
+        <button class="btn btn2" class="hel">VIEW</button>
+        <br>
+        
+
+        <button class="btn btn3" class="hel">BACK</button>
+    </div>
+</body>
+</html>
