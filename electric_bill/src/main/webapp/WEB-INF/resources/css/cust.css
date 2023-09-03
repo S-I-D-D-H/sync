@@ -1,0 +1,101 @@
+@charset "UTF-8";
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    background-image: url("abstract-technology-circuit-lines-diagram-background.zip");
+}
+
+
+  #box_1
+{
+
+    width: 70vw;
+    height: 110vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    /* background-image: url("wallpaperflare.com_wallpaper.jpg"); */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  
+    text-align: center;
+}
+  .form::before 
+  {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    /* background: rgba(255,255,255, 0.08); */
+    transform: skewX(-26deg);
+    transform-origin: bottom left;
+    border-radius: 10px;
+    pointer-events: none;
+  }
+  .form h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: #ff652f;
+  }
+  .form .input-group {
+    position: relative;
+  }
+  .form .input-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+  }
+  .form .input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .3s ease-out;
+  }
+  .form .input-group input:focus + label,
+  .form .input-group input:valid + label {
+    transform: translateY(-18px);
+    color: #ff652f;
+    font-size: .8rem;
+  }
+
+#but
+{
+   
+  outline: none;
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 6px 15px;
+  margin-bottom: 8px;
+  /* margin-top: 20px; */
+  border: none;
+  /* margin: 0 8px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: linear-gradient( 135deg, #ff9a9e  10%, #F6416C 100%);
+  
+}
+#but:hover
+{
+  transform: scale(0.97);
+}
+  

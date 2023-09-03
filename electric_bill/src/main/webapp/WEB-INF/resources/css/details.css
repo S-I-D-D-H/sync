@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body
+{
+	width:100vw;
+	height:100vh;
+	display:flex;
+}
+#container
+{
+	display: flex;
+	flex-direction: column;
+}
+#box_1
+{
+	width: 95vw;
+	height: 90vh;
+	font-size: 20px;
+	
+	display: flex;
+	justify-content: space-between;
+	color: orange;
+}
+#box_2
+{
+	width:100vw;
+	height:10vh;
+	
+}
+#but
+{
+	text-align: center;
+}
